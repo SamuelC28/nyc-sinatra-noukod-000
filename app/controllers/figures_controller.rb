@@ -44,7 +44,6 @@ class FiguresController < ApplicationController
 
     @figure = Figure.find params[:id]
     @figure.update figure
-    # @figure.landmark_ids =
     @figure.titles.find_or_create_by(name: title[:name])
     @figure.landmarks.find_or_create_by(name: landmark[:name])
 
