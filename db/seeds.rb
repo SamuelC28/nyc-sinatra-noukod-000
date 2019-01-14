@@ -46,6 +46,9 @@ figure_list = {
     },
     "Linus Torvalds" => { 
     }
+    "Samuel Cornet" => {
+      
+    }
   }
 
 figure_list.each do |name, figure_hash|
