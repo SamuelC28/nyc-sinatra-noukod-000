@@ -7,7 +7,11 @@ class FiguresController < ApplicationController
     erb :'figures/new'
   end
 
-  get 'figures' do
+  get '/figures' do
+    figure = params[:figure]
+    title = params[:title]
+    landmark = params[:landmark]
+    
 
   end
 
