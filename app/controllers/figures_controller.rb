@@ -7,7 +7,7 @@ class FiguresController < ApplicationController
     erb :'figures/new'
   end
 
-  get 'figures'
+  get 'figures' do
 
   end
 
