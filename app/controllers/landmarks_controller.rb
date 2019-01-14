@@ -1,6 +1,5 @@
 class LandmarksController < ApplicationController
-  # add controller methods
-  class LandmarksController < ApplicationController
+
   # add controller methods
   get '/landmarks/new' do
     erb :'landmarks/new'
@@ -37,4 +36,3 @@ class LandmarksController < ApplicationController
     redirect "/landmarks/#{@landmark.id}"
   end
 end
-
