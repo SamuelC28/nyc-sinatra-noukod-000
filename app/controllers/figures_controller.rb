@@ -17,9 +17,17 @@ class FiguresController < ApplicationController
     @figure.landmarks.find_or_create_by(name: landmark[:name])
 
     redirect "/figures/#{@figure.id}"
-
   end
 
+  post '/figures' do
+    @figures = Figure.all
+    erb :'figures/index'
+  end
+
+  get '/figures/:id' do
+    @figure = Figure.find params[:id]
+    erb :'figures/show'
+  end
   post '/figures/new' do
 
   end
