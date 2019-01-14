@@ -4,7 +4,7 @@ class FiguresController < ApplicationController
     @titles = Title.all
     @landmarks = Landmark.all
 
-      erb :'figures/new'
+    erb :'figures/new'
   end
 
   get 'figures'
