@@ -45,7 +45,7 @@ figure_list = {
     "Ada Lovelace" => {
     },
     "Linus Torvalds" => {
-    }
+    },
     "Samuel Cornet" => {
     }
   }
