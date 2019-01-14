@@ -1,8 +1,10 @@
 class FiguresController < ApplicationController
   # add controller methods
   get '/figures/new' do
-    @figures= Figures.all 
-    erb :new 
+    @titles = Title.all
+    @landmarks = Landmark.all
+  
+      erb :'figures/new'
   end
 
   get 'figures'
