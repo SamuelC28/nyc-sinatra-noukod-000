@@ -28,7 +28,7 @@ class FiguresController < ApplicationController
     @figure = Figure.find params[:id]
     erb :'figures/show'
   end
-  post '/figures/new' do
-
-  end
+  # post '/figures/new' do
+  #
+  # end
 end
