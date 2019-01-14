@@ -7,7 +7,7 @@ class FiguresController < ApplicationController
     erb :'figures/new'
   end
 
-  get '/figures' do
+  post '/figures' do
     figure = params[:figure]
     title = params[:title]
     landmark = params[:landmark]
@@ -19,7 +19,7 @@ class FiguresController < ApplicationController
     redirect "/figures/#{@figure.id}"
   end
 
-  post '/figures' do
+  get '/figures' do
     @figures = Figure.all
     erb :'figures/index'
   end
