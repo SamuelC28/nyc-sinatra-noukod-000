@@ -47,7 +47,6 @@ figure_list = {
     "Linus Torvalds" => {
     }
     "Samuel Cornet" => {
-
     }
   }
 
