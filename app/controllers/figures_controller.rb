@@ -11,7 +11,13 @@ class FiguresController < ApplicationController
     figure = params[:figure]
     title = params[:title]
     landmark = params[:landmark]
+
     
+    @figure = Figure.create(figure)
+    @figure.titles.find_or_create_by(name: title[:name])
+    @figure.landmarks.find_or_create_by(name: landmark[:name])
+
+    redirect "/figures/#{@figure.id}"
 
   end
 
