@@ -4,4 +4,3 @@ class CreateLandmarks < ActiveRecord::Migration
    t.belongs_to :figure
    t.integer :year_completed
 end
-s
